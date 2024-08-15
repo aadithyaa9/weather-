@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="./icons/favicon.png">
-        <link rel="stylesheet" href="style.css">
-        <script src="./src/index.js"></script>
-        <title>Weather</title>
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="form-container">
-                <form action="#" method="get">
-                    <div class="label-div">
-                        <label for="search">Location</label>
-                    </div>
-                    <div class="search-row">
-                        <input type="text" id="search">
-                        <button class="findbtn">Find</button>
-                    </div>
-                </form>
-            </div>
-            <div class="weather-data"></div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./icons/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./src/index.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-container">
+        <form action="#" method="get">
+          <div class="label-div">
+            <label for="search">Location</label>
+            <span class="message">Loading...</span>
+          </div>
+          <div class="search-row">
+            <input type="text" id="search" />
+            <button class="find-btn">Find</button>
+          </div>
+        </form>
+      </div>
+      <div class="weather-data">
+      </div>
+    </div>
+  </body>
 </html>
