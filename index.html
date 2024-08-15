@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./icons/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./src/index.js"></script>
+    <script src="./dist/main.js" defer></script>
     <title>Weather</title>
   </head>
   <body>
@@ -13,11 +13,11 @@
         <form action="#" method="get">
           <div class="label-div">
             <label for="search">Location</label>
-            <span class="message">Loading...</span>
+            <span class="message"></span>
           </div>
           <div class="search-row">
             <input type="text" id="search" />
-            <button class="find-btn">Find</button>
+            <button type= "button" class="find-btn">Find</button>
           </div>
         </form>
       </div>

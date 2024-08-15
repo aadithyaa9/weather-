@@ -67,8 +67,10 @@ label {
   border: none;
 }
 
-.message {
-  display: none;
+.find-btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #06b6d4;
 }
 
 .weather-data {
@@ -143,9 +145,17 @@ label {
   margin-top: -10px;
 }
 
-p{
+p {
   width: 100%;
   font-weight: 200;
 }
 
+.toggle:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #06b6d4;
+}
 
+.super-script{
+  margin-left: -10px;
+}
