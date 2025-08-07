@@ -6,7 +6,6 @@ const input = document.querySelector("#search");
 const message = document.querySelector(".message");
 const weatherdiv = document.querySelector(".weather-data");
 let inputlocation;
-let url;
 let weatherarray = [];
 
 // Event Listener for button
