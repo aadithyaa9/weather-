@@ -6,6 +6,7 @@ async function getWeather(location,message) {
       { mode: "cors" }
     );
     const data = await response.json();
+    console.log(data);
     return [
       data.currentConditions.temp, 
       data.currentConditions.conditions,

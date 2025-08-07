@@ -1,5 +1,5 @@
 import { getWeather } from "./requests/weather";
-import { getGif } from "./requests/gif";
+
 
 const button = document.querySelector(".find-btn");
 const input = document.querySelector("#search");
@@ -21,7 +21,7 @@ button.addEventListener("click", async function (event) {
     // Fetch the weather data and GIF
     try {
       weatherarray = await getWeather(inputlocation, message);
-      url = await getGif(weatherarray[1]);
+      
 
       // Clear the message and update the DOM with weather data
       message.textContent = "";
@@ -39,9 +39,6 @@ button.addEventListener("click", async function (event) {
         <div class="temp-row">
           <span class="temp">${celsiusTemp}<span class="super-script">°<sup>C</sup></span></span>
           <img class="icon" src="./icons/${weatherarray[2]}.svg" />
-        </div>
-        <div class="gif-container">
-          <img class="gif" src="${url}" alt="#" />
         </div>
         <div class="condition">
           <h3>${weatherarray[1]}</h3>
